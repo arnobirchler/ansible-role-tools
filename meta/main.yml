@@ -35,7 +35,12 @@ galaxy_info:
   platforms:
   - name: Debian
     versions:
-    - 9
+    - stretch
+    - jessie
+  - name: Ubuntu
+    versions:
+    - xenial
+    - bionic
   # - name: SomePlatform
   #   versions:
   #   - all

@@ -3,6 +3,7 @@
 
   vars:
     gitlab_restart_handler_failed_when: false
+    file: "test"
 
   pre_tasks:
     - name: Update apt cache.

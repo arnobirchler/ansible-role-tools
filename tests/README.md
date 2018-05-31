@@ -11,4 +11,4 @@ To run the test playbook(s) in this directory:
 
 If you don't want the container to be automatically deleted after the test playbook is run, add the following environment variables: `cleanup=false container_id=$(date +%s)`
 
-If docker need requirements add a file 'requirements.yml' then the script will execute a `ansible-galaxy install -r` under it
+If there is any requirements add a file 'requirements.yml' then the script will execute a `ansible-galaxy install -r` under it

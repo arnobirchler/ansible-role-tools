@@ -1,0 +1,7 @@
+---
+# tasks file for ansible-role-create-account 
+- name: "FILE | create a file"
+  file:
+    path: "./test.txt"
+    state: touch
+  

@@ -1,5 +1,6 @@
 Role Name
 =========
+[![Build Status](https://travis-ci.org/arnobirchler/ansible-role-template.svg?branch=master)](https://travis-ci.org/arnobirchler/ansible-role-template)
 
 Empty role with travis-ci configuration
 

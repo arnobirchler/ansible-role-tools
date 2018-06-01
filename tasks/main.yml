@@ -28,14 +28,14 @@
     url: https://gist.githubusercontent.com/arnobirchler/b38303f949fa290ede8bac81f9da698f/raw
     dest: /root/.zshrc
     owner: root
-- name: ZSH | Configure oh-my-zsh for {user}
+- name: ZSH | Configure oh-my-zsh for {{ user }}
   get_url:
     url: https://gist.githubusercontent.com/arnobirchler/b38303f949fa290ede8bac81f9da698f/raw
-    dest: /home/{user}/.zshrc
-- name: ZSH | Configure oh-my-zsh for { sudoer }
+    dest: /home/{{ user }}/.zshrc
+- name: ZSH | Configure oh-my-zsh for {{ sudoer }}
   get_url:
     url: https://gist.githubusercontent.com/arnobirchler/b38303f949fa290ede8bac81f9da698f/raw
-    dest: /home/{sudoer}/.zshrc
+    dest: /home/{{ sudoer }}/.zshrc
   
   
 

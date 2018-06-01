@@ -1,8 +1,8 @@
-Ansible Role | Template
+Ansible Role | Tools
 =========
-[![Build Status](https://travis-ci.org/arnobirchler/ansible-role-template.svg?branch=master)](https://travis-ci.org/arnobirchler/ansible-role-template)
+[![Build Status](https://travis-ci.org/arnobirchler/ansible-role-tools.svg?branch=master)](https://travis-ci.org/arnobirchler/ansible-role-tools)
 
-Empty role with travis-ci configuration
+Tools role with travis-ci configuration
 
 Requirements
 ------------
@@ -26,10 +26,14 @@ Travis : 2 Depedencies
 Example Playbook
 ----------------
 ```
-- name: "FILE | create a file"
-  file:
-    path: "./test.txt"
-    state: touch
+ name: Server deployment
+  hosts: all
+  remote_user: root
+  
+  tasks:
+  - name: Install Tools
+    include_role:
+      name: arnobirchler.ssh-access
 ```
 
 License

@@ -1,7 +1,30 @@
 ---
-# tasks file for ansible-role-create-account 
-- name: "FILE | create a file"
-  file:
-    path: "./{{ file }}.txt"
-    state: touch
+# tasks file for ansible-role-tools
+- name: APT | Update
+  apt:
+    upgrade: dist
+    update_cache: yes 
+- name: TOOLS | Install tools
+  apt:
+    name:
+      - vim
+      - git
+      - tree
+      - htop
+      - unzip
+      - apt-transport-https
+      - lsb-release
+      - ca-certificates
+      - curl
+      - wget
+      - zsh
+    state: present
+- name: TOOLS | Install oh-my-zsh
+  git: >
+      repo=https://github.com/robbyrussell/oh-my-zsh.git
+      dest=/etc/zsh/.oh-my-zsh
+  args:
+    creates: /etc/zsh/.oh-my-zsh
+
+
   

@@ -36,7 +36,12 @@
   get_url:
     url: https://gist.githubusercontent.com/arnobirchler/b38303f949fa290ede8bac81f9da698f/raw
     dest: /home/{{ sudoer }}/.zshrc
-  
+- name: ZSH | change shell for root
+  command: chsh -s /bin/zsh root
+- name: ZSH | change shell for {{ user }}
+  command: chsh -s /bin/zsh {{ user }}
+- name: ZSH | change shell for {{ sudoer }}
+  command: chsh -s /bin/zsh {{ suoder }} 
   
 
 # - name: ZSH | Install oh-my-zsh for { user }

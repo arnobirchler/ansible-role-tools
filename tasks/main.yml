@@ -24,10 +24,13 @@
     repo: https://github.com/robbyrussell/oh-my-zsh.git
     dest: /etc/zsh/.oh-my-zsh 
   
-# - name: ZSH | Install oh-my-zsh for root
-  # git:
-  #   repo: https://gist.github.com/b38303f949fa290ede8bac81f9da698f.git
-  #   dest:
+- name: ZSH | Configure oh-my-zsh for root
+  get_url:
+    url: https://gist.githubusercontent.com/arnobirchler/b38303f949fa290ede8bac81f9da698f/raw
+    dest: /root/.zshrc
+  args:
+    created: /root/.zshrc
+  
 
 # - name: ZSH | Install oh-my-zsh for { user }
 

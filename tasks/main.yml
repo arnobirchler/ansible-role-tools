@@ -20,11 +20,11 @@
       - zsh
     state: present
 - name: TOOLS | Install oh-my-zsh
+  git:
+    repo: https://github.com/robbyrussell/oh-my-zsh.git
+    dest: /etc/zsh/.oh-my-zsh
   args:
-    creates: /etc/zsh/.oh-my-zsh
-  git: >
-    repo=https://github.com/robbyrussell/oh-my-zsh.git
-    dest=/etc/zsh/.oh-my-zsh
+    creates: /etc/zsh/.oh-my-zsh  
   
 # - name: ZSH | Install oh-my-zsh for root
 

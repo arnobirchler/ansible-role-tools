@@ -29,7 +29,7 @@
     url: https://gist.githubusercontent.com/arnobirchler/b38303f949fa290ede8bac81f9da698f/raw
     dest: /root/.zshrc
   args:
-    created: /root/.zshrc
+    creates: /root/.zshrc
   
 
 # - name: ZSH | Install oh-my-zsh for { user }

@@ -18,6 +18,7 @@
       - curl
       - wget
       - zsh
+      - net-tools
     state: present
 - name: TOOLS | Install oh-my-zsh
   git:

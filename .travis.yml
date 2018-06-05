@@ -21,6 +21,7 @@ script:
   - export container_id=$(date +%s)
   - export cleanup=false
 
+
   # Download test shim.
   - wget -O ${PWD}/tests/test.sh https://gist.githubusercontent.com/arnobirchler/627e4655465b696a0b521a560bc2206f/raw/
   - chmod +x ${PWD}/tests/test.sh
